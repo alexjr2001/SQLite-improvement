@@ -11,7 +11,9 @@ The XTree has three types of nodes which helps to high dimensionality management
 <img src=https://github.com/alexjr2001/SQLite-improvement/assets/63054183/97749dae-6cd0-4f0a-9e4f-3856c32f07d4>
 </p>
 
-In case of queries or deletion the supernodes help to save in memory data continously and have a linear scan. In case of insertion, if there's not overflow we insert as the R*Tree, otherwise we make an hypothetical split to see if the overlap is minimum searching for the minimal overlap split if it is not we create a supernode. The minimal overlap split has a spliting history to know where to perform the split.
+In case of queries or deletion the supernodes help to save in memory data continously and have a linear scan. In case of insertion, if there's not overflow we insert as the R*Tree, otherwise we make an hypothetical split to see if the overlap is minimum searching for the minimal overlap split if it is not we create a supernode. The minimal overlap split has a spliting history to know where to perform the split. 
+
+You can find more information about X-tree structure in this [document](https://bib.dbvis.de/uploadedFiles/190.pdf).
 
 In the following part we will see how to compile and run the project. It was the sent document with the code in the project (its structure was requested).
 
